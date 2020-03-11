@@ -1,0 +1,16 @@
+{
+  "name": "citas-lit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "polymer index.js"
+  },
+  "keywords": [],
+  "author": "Jesus <christian.castillo.lozano@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "moment": "^2.24.0"
+  }
+}
