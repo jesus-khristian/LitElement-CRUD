@@ -21,10 +21,10 @@ class AppConsult extends LitElement{
 				<h1 class="pt-4">Consulta Médica <a class="btn btn-dark " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1>
 				</div> 
 				<div class="row">
-					<div class="col pt-4 ">
+					<div class="col-md-6 pt-4 ">
       						<my-form @agregar-Consulta=${this.guardarConsulta} ></my-form>
     				</div>
-					<div class="col pt-4">
+					<div class="col-md-6 pt-4">
 						
 						${ this.consultas.length>0 ? html`<h4>Consultas de hoy  ${moment().format('l')} </h4>` : html `<h4>No tienes consultas</h4>`}
 						<admin-consults @eliminar-consulta="${this.eliminarConsulta}" list="${JSON.stringify(this.consultas)}"></admin-consults>
