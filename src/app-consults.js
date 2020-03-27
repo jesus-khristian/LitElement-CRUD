@@ -17,7 +17,7 @@ class AppConsult extends LitElement{
 	render(){
 		return html `
 			<div class="container">
-				<h1 class="pt-4">Consulta Médica - LitElement - Webpack - Babel</h1>
+				<h1 class="pt-4">Consulta Médica - LitElement - Webpack - Babel <a class="btn btn-dark  " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1> 
 				<div class="row">
 					<div class="col pt-4 ">
       						<my-form @agregar-Consulta=${this.guardarConsulta} ></my-form>

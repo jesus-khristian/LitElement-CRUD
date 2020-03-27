@@ -31,7 +31,7 @@ class AdminConsults extends LitElement {
                 Proxima Cita : ${item.fecha}
               </h6>
               <button
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 @click="${() => this.deleteConsulta(item._id)}"
               >
                 Borrar
