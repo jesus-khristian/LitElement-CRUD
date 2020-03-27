@@ -2,7 +2,7 @@ import {LitElement,html} from 'lit-element';
 import moment from 'moment';
 import  './components/my-form.js';
 import './components/admin-consults.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/bootstrap.min.css';
 
 
 
@@ -17,7 +17,7 @@ class AppConsult extends LitElement{
 	render(){
 		return html `
 			<div class="container">
-				<h1 class="pt-4">Consulta Médica - LitElement - Webpack - Babel <a class="btn btn-dark  " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1> 
+				<h1 class="pt-4">Consulta Médica-LitElement<a class="btn btn-dark  " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1> 
 				<div class="row">
 					<div class="col pt-4 ">
       						<my-form @agregar-Consulta=${this.guardarConsulta} ></my-form>
