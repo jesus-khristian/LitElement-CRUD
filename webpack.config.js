@@ -16,7 +16,7 @@ module.exports = {
     },
     plugins:[
       new HtmlWebpackPlugin({
-        template:'./src/index.html',
+        template:'./public/index.html',
         minify: {
           collapseWhitespace: true,
           removeComments: true,
@@ -47,6 +47,10 @@ module.exports = {
             MiniCssExtractPlugin.loader,
             'css-loader'
           ]
+        },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: 'file-loader'
         }
       ]
     }

@@ -1,10 +1,9 @@
-import {LitElement,html} from 'lit-element';
+import {LitElement,html, css} from 'lit-element';
 import moment from 'moment';
 import  './components/my-form.js';
 import './components/admin-consults.js';
-import './css/bootstrap.min.css';
-
-
+import '../public/css/bootstrap.min.css';
+import paper from '../public/img/medi.png'
 
 class AppConsult extends LitElement{
 	static get properties(){
@@ -16,8 +15,11 @@ class AppConsult extends LitElement{
 
 	render(){
 		return html `
-			<div class="container">
-				<h1 class="pt-4">Consulta Médica-LitElement<a class="btn btn-dark  " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1> 
+		<img src='${paper}' class="vw-100 vh-100 position-absolute p-0 " style="margin:-17px;"  alt="image" />
+			<div class="container position-relative">
+				<div class="row ">
+				<h1 class="pt-4">Consulta Médica <a class="btn btn-dark " href="https://github.com/jesus-khristian/LitElement-CRUD" target="__blanck" rel="noopener">Mirar codigo</a></h1>
+				</div> 
 				<div class="row">
 					<div class="col pt-4 ">
       						<my-form @agregar-Consulta=${this.guardarConsulta} ></my-form>
